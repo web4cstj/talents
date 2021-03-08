@@ -1,6 +1,5 @@
 <?php
-include("../app/Pokemon.php");
-include("../app/Talent.php");
+
 $affichage = Talent::html_index();
 ?><!DOCTYPE html>
 <html lang="fr">

@@ -1,13 +1,7 @@
 <?php
 class Pokemon {
 	static public $pdo = NULL;
-	static public function init() {
-		if (!is_null(self::$pdo)) {
-			return self::$pdo;
-		}
-		self::$pdo = new PDO("sqlite:../pokemon.sqlite");
-		return self::$pdo;
-	}
+	
 	static public function html_index() {
 		$pdo = new PDO("sqlite:../pokemon.sqlite");
 		$stmt = $pdo->prepare("SELECT id, numero, nom_fr FROM pokemons ORDER BY numero LIMIT 20");

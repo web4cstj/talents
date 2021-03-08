@@ -1,11 +1,5 @@
 <?php
-include("../app/Pokemon.php");
-include("../app/Talent.php");
-if (!isset($_GET['id'])) {
-	header("location:talent_index.php");
-	exit;
-}
-$id = $_GET['id'];
+
 $affichage = Talent::html_show($id);
 ?><!DOCTYPE html>
 <html lang="fr">
