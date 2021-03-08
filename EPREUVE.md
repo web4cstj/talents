@@ -1,7 +1,7 @@
 ÉPREUVE : Consignes
 ===================
 
-Reproduire l'exemple à l'adresse http://web4.tim-cstj.ca/projets/talents
+Reproduire l'exemple à l'adresse http://web4.tim-cstj.ca/projets/talents/public/talent_index.php
 
 Étapes
 ------
