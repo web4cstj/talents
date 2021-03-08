@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="pokemon.css" />
+	<title>Monde Pokémons</title>
+</head>
+
+<body>
+	<div id="app">
+		<header>
+			<h1>Monde Pokémons</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="talent_index.php">Retour à la liste</a></li>
+				<li><a href="talent_show.php?id=78">Retour au talent</a></li>
+				<li><a href="talent_delete.php?id=78">Supprimer le talent</a></li>
+			</ul>
+		</nav>
+		<footer>Intégration Web 3</footer>
+		<div class="body">
+			<form action="" method="post">
+				<table class="talent">
+					<tr>
+						<th>Génération</th>
+						<td><input type="number" name="generation" id="generation" min="1" max="10" value="4" /></td>
+					</tr>
+					<tr>
+						<th>Nom français</th>
+						<td><input type="text" name="nom_fr" id="nom_fr" value="Adaptabilité" /></td>
+					</tr>
+					<tr>
+						<th>Nom anglais</th>
+						<td><input type="text" name="nom_en" id="nom_en" value="Adaptability" /></td>
+					</tr>
+					<tr>
+						<th>Effet combat</th>
+						<td><input type="text" name="effet_combat" id="effet_combat" value="STAB : Si ce Pokémon utilise une attaque de son type, la puissance de l'attaque est multipliée par 2 au lieu de 1.5." />
+						</td>
+					</tr>
+					<tr>
+						<th>Effet terrain</th>
+						<td><input type="text" name="effet_terrain" id="effet_terrain" value="" /></td>
+					</tr>
+					<tr>
+						<th colspan="2"><input type="submit" value="Envoyer"><input type="hidden" name="talent_edit"><input type="hidden" name="id" value="78"></th>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
